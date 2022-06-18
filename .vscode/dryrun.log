@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/lobonegro/Desktop/projeto-relogio/relogio_analogico_opengl'
+gcc -c ./bibliotecas/configuracoes.c
+gcc -c ./bibliotecas/renderizacao.c
+gcc main.c -o relogio configuracoes.o renderizacao.o -lGL -lGLU -lglut -lm
+rm *.o
+./relogio
+make: Leaving directory '/home/lobonegro/Desktop/projeto-relogio/relogio_analogico_opengl'
+ 
